@@ -1,0 +1,89 @@
+
+$base-color : #808000;
+body
+{
+    text-align: center;
+    white-space: pre-line;
+    background-image: url(../img/briques.jpg);
+    #en-tete
+    {
+        background-color: $base-color;
+        border-bottom-width: 3px;
+        border-bottom-color: black;
+        border-bottom-style: solid;
+        img
+        {
+            height:250px;
+            width:100%;
+        }
+    }
+    main
+    {
+        background-color: $base-color;
+        border-width: 3px;
+        border-color: black;
+        border-style: solid;
+        
+    }
+    aside
+    {
+        background-color: $base-color;
+        border-width: 3px;
+        border-color: black;
+        border-style: solid;
+
+    }
+}
+main
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    article
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-content: center;
+        align-items: center;
+    }
+}
+aside
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    #contact-info
+    {
+
+    }
+}
+@media screen and (max-width: 955px) 
+{
+    main 
+    {
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: space-around;
+      align-content: center;
+      align-items: center;
+    }
+    aside
+    {
+        background: rgba(171, 205, 239, 0.1)
+    }
+    #contact-info
+    {
+        padding-left:  80%;
+        padding-right: 80%;
+        display: grid;
+        grid-gap : 5px;
+        grid-template-columns: 1fr 1fr;
+        
+
+    }
+  }
